@@ -50,21 +50,30 @@ body {
 
 .card-footer {
   margin-top: 2rem;
+  display: grid;
+
+  grid-template-areas: 
+    "profile-picture advisor-name advisor-name share-icon"
+    "profile-picture date date share-icon"
+  ;
 }
 
 .profile-picture {
   height: 2.5rem;
   width: 2.5rem;
   border-radius: 50%;
+  grid-area: profile-picture;
 }
 
 .advisor-name {
   font-size: 0.8125rem;
   font-weight: var(--fw-bold);
+  grid-area: advisor-name;
 }
 
 .date {
   font-size: 0.8125rem;
+  grid-area: date;
 }
 
 .share-icon {
@@ -75,4 +84,7 @@ body {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
+  grid-area: share-icon;
+  align-self: center;
+  justify-self: end;
 }
