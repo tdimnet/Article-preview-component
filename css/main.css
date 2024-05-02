@@ -17,6 +17,7 @@ body {
   font-family: var(--ff-manrope);
   padding-top: 4.625rem;
   background-color: var(--light-grayish-blue);
+  color: var(--very-dark-grayish-blue);
 }
 
 .main-wrapper {
@@ -36,4 +37,13 @@ body {
 
 .inner-content {
   padding: 2.25rem 2rem 1.25rem;
+}
+
+.heading {
+  margin-bottom: 0.75rem;
+  font-weight: var(--fw-bold);
+}
+
+.description {
+  font-size: 0.8125rem;
 }
