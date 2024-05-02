@@ -5,6 +5,7 @@
   --desaturated-dark-blue: hsl(214, 17%, 51%);
   --grayish-blue: hsl(212, 23%, 69%);
   --light-grayish-blue: hsl(210, 46%, 95%);
+  --white: #FFF;
 
   --ff-manrope: "Manrope", sans-serif;
 
@@ -14,6 +15,25 @@
 
 body {
   font-family: var(--ff-manrope);
+  padding-top: 4.625rem;
+  background-color: var(--light-grayish-blue);
 }
 
+.main-wrapper {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: var(--white);
 
+  .product-image {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.inner-content {
+  padding: 2.25rem 2rem 1.25rem;
+}
