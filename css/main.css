@@ -47,3 +47,32 @@ body {
 .description {
   font-size: 0.8125rem;
 }
+
+.card-footer {
+  margin-top: 2rem;
+}
+
+.profile-picture {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+}
+
+.advisor-name {
+  font-size: 0.8125rem;
+  font-weight: var(--fw-bold);
+}
+
+.date {
+  font-size: 0.8125rem;
+}
+
+.share-icon {
+  height: 2rem;
+  width: 2rem;
+  background-color: var(--light-grayish-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
