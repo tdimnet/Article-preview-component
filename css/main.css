@@ -45,6 +45,7 @@ body {
     display: grid;
     grid-template-columns: 285px 1fr;
     max-width: 45.625rem;
+    overflow: unset;
   }
 }
 
@@ -56,6 +57,8 @@ body {
   @media screen and (min-width: 768px) {
     height: 100%;
     width: auto;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
   }
 }
 
@@ -156,6 +159,30 @@ body {
   .share-icon {
     background-color: var(--light-grayish-blue);
     margin-left: auto;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 248px;
+    border-radius: 10px;
+    bottom: 86px;
+    left: unset;
+    right: -70px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .share-container::after {
+    content: "";
+    width: 0; 
+    height: 0; 
+    border-left: 16px solid transparent;
+    border-right: 16px solid transparent;
+    position: absolute;
+    bottom: -14px;
+    right: 102px;
+
+    
+    border-top: 16px solid var(--very-dark-grayish-blue);
   }
 }
 

@@ -3,7 +3,7 @@ const $shareContainer = document.querySelector('.share-container')
 const $closeShareBtn = document.querySelector('.close-share-btn')
 
 $shareBtn.addEventListener('click', function() {
-    $shareContainer.classList.remove('hidden')
+    $shareContainer.classList.toggle('hidden')
 })
 
 $closeShareBtn.addEventListener('click', function() {
