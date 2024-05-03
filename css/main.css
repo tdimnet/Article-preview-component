@@ -1,10 +1,10 @@
 /* font-family: "Manrope", sans-serif; */
 
 :root {
-  --very-dark-grayish-blue: hsl(217, 19%, 35%);
   --desaturated-dark-blue: hsl(214, 17%, 51%);
   --grayish-blue: hsl(212, 23%, 69%);
   --light-grayish-blue: hsl(210, 46%, 95%);
+  --very-dark-grayish-blue: hsl(217, 19%, 35%);
   --white: #fff;
 
   --ff-manrope: "Manrope", sans-serif;
@@ -14,10 +14,10 @@
 }
 
 body {
-  font-family: var(--ff-manrope);
-  padding-top: 4.625rem;
   background-color: var(--light-grayish-blue);
   color: var(--very-dark-grayish-blue);
+  font-family: var(--ff-manrope);
+  padding-top: 4.625rem;
 }
 
 .hidden {
@@ -26,32 +26,32 @@ body {
 
 body {
   @media screen and (min-width: 768px) {
-    display: flex;
     align-items: center;
+    display: flex;
     justify-content: center;
     min-height: 100vh;
   }
 }
 
 .main-wrapper {
-  width: 90%;
+  background-color: var(--white);
+  border-radius: 10px;
   margin-left: auto;
   margin-right: auto;
-  border-radius: 10px;
   overflow: hidden;
-  background-color: var(--white);
+  width: 90%;
 
   @media screen and (min-width: 768px) {
-    max-width: 45.625rem;
     display: grid;
     grid-template-columns: 285px 1fr;
+    max-width: 45.625rem;
   }
 }
 
 .product-image {
   height: 200px;
-  width: 100%;
   object-fit: cover;
+  width: 100%;
 
   @media screen and (min-width: 768px) {
     height: 100%;
@@ -65,8 +65,8 @@ body {
 }
 
 .heading {
-  margin-bottom: 0.75rem;
   font-weight: var(--fw-bold);
+  margin-bottom: 0.75rem;
 }
 
 .description {
@@ -74,13 +74,11 @@ body {
 }
 
 .card-footer {
-  margin-top: 2rem;
   display: grid;
-
-  grid-template-areas: 
+  grid-template-areas:
     "profile-picture advisor-name advisor-name share-icon"
-    "profile-picture date date share-icon"
-  ;
+    "profile-picture date date share-icon";
+  margin-top: 2rem;
 
   .profile-picture {
     grid-area: profile-picture;
@@ -100,9 +98,9 @@ body {
 }
 
 .profile-picture {
+  border-radius: 50%;
   height: 2.5rem;
   width: 2.5rem;
-  border-radius: 50%;
 }
 
 .advisor-name {
@@ -115,32 +113,32 @@ body {
 }
 
 .share-icon {
-  height: 2rem;
-  width: 2rem;
-  background-color: var(--light-grayish-blue);
-  display: flex;
   align-items: center;
-  justify-content: center;
-  border-radius: 50%;
   align-self: center;
-  justify-self: end;
+  background-color: var(--light-grayish-blue);
+  border-radius: 50%;
   cursor: pointer;
+  display: flex;
+  height: 2rem;
+  justify-content: center;
+  justify-self: end;
+  width: 2rem;
 }
 
 .share-container {
-  background-color: var(--very-dark-grayish-blue);
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  padding: 1.375rem 2rem;
-  display: flex;
   align-items: center;
+  background-color: var(--very-dark-grayish-blue);
+  bottom: 0;
+  display: flex;
+  left: 0;
+  padding: 1.375rem 2rem;
+  position: absolute;
   width: 100%;
   z-index: 10;
 
   .share-message {
     margin-right: 1.375rem;
-    letter-spacing: .375rem;
+    letter-spacing: 0.375rem;
   }
 
   .facebook-icon {
@@ -156,8 +154,8 @@ body {
   }
 
   .share-icon {
-    margin-left: auto;
     background-color: var(--light-grayish-blue);
+    margin-left: auto;
   }
 }
 
